@@ -41,4 +41,6 @@ Task 8: Extract the records of high-risk patients and write to a separate csv fi
 
 Now we need to extract the records of high-risk patients from the table and save their details (all column values of the patient in the table) into a new csv file. Write a function named extract_high_risk(table,filename) that extracts the records of patients who satisfy all of the following conditions and write their data into the given file, output_filename. Add the column headings to the file as well.
 
-有需求请联系
+有需要帮忙请联系489388793
+
+学长学姐专注作业辅导
