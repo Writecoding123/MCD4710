@@ -5,12 +5,25 @@ Task 1: Read the data into a table
 
 Implement a function named read_data(filename), with the following specification, which reads a given file and returns the contents in a table. Make sure you store the smoking status (in the 6th column) as an integer and the other numerical values as floats.
 
+```python
+def read_data(filename):
+  with open(filename, 'r', ',') as f:
+    data = f.readlines()
+```
+
 Task 2: Convert the weight to kilograms
 
 The weight of each patient is given in pounds (lbs). Write a function named lbs_to_kg(table), which converts the weight to kilograms (kg) and replaces the original weight in the table, for each patient. Make sure the weight in kg is rounded to one decimal place.
 
+```python
 def lbs_to_kg(table):
-  
+  pass
+```
+有需要帮忙请联系489388793
+
+学长学姐专注作业辅导
+
+
 Task 3: Calculate the body mass index (BMI)
 
 The body mass index (BMI) for each patient needs to be calculated. Write a function named calculate_BMI(table), which calculates the BMI for each person, using the formula below. Append the BMI values, rounded to one decimal place, as the last column of the table.
@@ -31,11 +44,13 @@ Task 7: Determine whether a given patient is a smoker or not
 
 Write a function named is_smoker(table,name) that returns True if the given patient is a smoker and False if not. The function should return None if the patient record is not available in the table.
 
+```python
 def is_smoker(table,name):
   data = table[table.iloc[:,0] == name]
   if data[5] == 1:
     return True
   return False
+```
 
 Task 8: Extract the records of high-risk patients and write to a separate csv file
 
